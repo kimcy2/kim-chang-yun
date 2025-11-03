@@ -7,11 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      /* 프로젝트별 포인트 컬러 */
       --revia-grad: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%);
       --localr-grad: linear-gradient(90deg, #3b82f6 0%, #facc15 100%);
       --nextrozi-grad: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
-      /* Glassmorphism 공통 */
       --glass-bg: rgba(255, 255, 255, 0.45);
       --glass-border: rgba(255, 255, 255, 0.6);
       --text: #1a1a1a;
@@ -103,29 +101,35 @@
       transition: opacity 0.3s;
     }
 
-    a:hover {
-      opacity: 0.8;
-    }
+    a:hover { opacity: 0.8; }
 
     .text {
       flex: 1 1 320px;
       min-width: 260px;
     }
 
+    /* ✅ 비율 고정 방식으로 수정 (모바일 여백 해결) */
     .video {
       flex: 0 0 420px;
       width: 100%;
       max-width: 420px;
       border-radius: 18px;
       overflow: hidden;
+      position: relative;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
     }
-
-    iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: none;
+    .video::before {
+      content: "";
       display: block;
+      padding-top: 56.25%; /* 16:9 비율 유지 */
+    }
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     footer {
@@ -135,26 +139,17 @@
       font-size: 14px;
     }
 
-    /* 반응형: 모바일에선 단일 컬럼 */
+    /* 모바일 대응 */
     @media (max-width: 860px) {
-      body {
-        padding: 40px 5%;
-      }
+      body { padding: 40px 5%; }
       section {
         flex-direction: column;
         text-align: center;
         padding: 24px;
         gap: 20px;
       }
-      .video {
-        max-width: 100%;
-      }
-      iframe {
-        aspect-ratio: 16/9;
-      }
-      h2 {
-        font-size: 1.15rem;
-      }
+      .video { max-width: 100%; }
+      h2 { font-size: 1.15rem; }
     }
   </style>
 </head>
@@ -218,7 +213,7 @@
   </footer>
 
   <script>
-    // 부드러운 등장 애니메이션 (모바일 포함)
+    // 부드러운 등장 애니메이션
     const observer = new IntersectionObserver((entries)=>{
       entries.forEach(entry=>{
         if(entry.isIntersecting){
@@ -227,7 +222,6 @@
         }
       });
     },{threshold:0.2});
-
     document.querySelectorAll("section").forEach(sec=>observer.observe(sec));
   </script>
 </body>
