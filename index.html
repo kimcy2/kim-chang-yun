@@ -4,73 +4,167 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>김창윤 | REVIA · LOCALR7 · NEXTROZI 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
+    /* ==============================
+       Apple Vision Pro GlassTone Portfolio
+       ============================== */
     :root {
       --revia: #c9a678;
       --localr: #6fc7e1;
       --nextrozi: #c977e6;
     }
-    body {
-      font-family: "Pretendard", "Noto Sans KR", sans-serif;
-      background: radial-gradient(circle at top left, #0d0d0d, #1a1a1a);
-      color: #f4f4f4;
+
+    * {
       margin: 0;
-      padding: 50px 5%;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
+
+    body {
+      background: radial-gradient(circle at 30% 10%, #1a1a1a 0%, #0b0b0b 100%);
+      color: #f9f9f9;
+      min-height: 100vh;
+      padding: 60px 8%;
+      overflow-x: hidden;
+      perspective: 1000px;
+    }
+
     h1 {
       text-align: center;
-      color: var(--revia);
-      font-size: 2.2rem;
+      font-size: 2.4rem;
+      background: linear-gradient(90deg, #ffffff, #d1d1d1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       margin-bottom: 10px;
     }
+
     p.subtitle {
       text-align: center;
       color: #aaa;
+      font-size: 1rem;
       margin-bottom: 60px;
     }
+
     section {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 40px;
-      margin-bottom: 70px;
-      padding: 30px;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.05);
-      box-shadow: 0 6px 25px rgba(255,255,255,0.05);
-      backdrop-filter: blur(12px);
-      transition: all 0.4s ease;
+      gap: 50px;
+      margin-bottom: 80px;
+      padding: 36px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.25),
+        0 10px 50px rgba(0,0,0,0.45);
+      backdrop-filter: blur(25px) saturate(140%);
+      -webkit-backdrop-filter: blur(25px) saturate(140%);
+      transform-style: preserve-3d;
+      transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
     }
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 35px rgba(255,255,255,0.15);
+
+    /* 🧊 패럴랙스 효과 */
+    section.visible {
+      transform: rotateX(0deg) translateY(0);
+      opacity: 1;
     }
-    .text {
-      flex: 1;
+
+    section.hidden {
+      transform: translateY(40px) rotateX(6deg);
+      opacity: 0;
     }
+
+    /* ✨ 내부 콘텐츠 */
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      background: linear-gradient(90deg, var(--accent), #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.88);
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
     .video {
       flex: 0 0 420px;
-      border-radius: 18px;
+      border-radius: 22px;
       overflow: hidden;
-      transition: transform 0.5s ease;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+      transition: transform 0.4s ease;
     }
+
     iframe {
       width: 100%;
       height: 236px;
       border: none;
     }
-    ul { list-style: "📌 "; padding-left: 20px; }
-    li { margin-bottom: 8px; line-height: 1.5; }
-    a { color: var(--revia); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+
     footer {
       text-align: center;
-      margin-top: 50px;
-      color: #999;
+      margin-top: 60px;
+      color: #777;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
     }
+
+    /* 반응형 */
     @media (max-width: 900px) {
-      section { flex-direction: column; text-align: center; }
-      .video { width: 100%; }
+      section {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px;
+      }
+      .video {
+        width: 100%;
+        flex: none;
+      }
+      iframe {
+        height: 220px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 24px;
+        border-radius: 20px;
+      }
     }
   </style>
 </head>
@@ -80,9 +174,9 @@
   <p class="subtitle">REVIA · LOCALR7 · NEXTROZI | React · Spring Boot · Python · OpenAI API</p>
 
   <!-- REVIA -->
-  <section style="--accent: var(--revia)">
+  <section class="hidden" style="--accent: var(--revia)">
     <div class="text">
-      <h2 style="color:var(--revia)">👗 REVIA | AI 패션 스타일 추천 플랫폼</h2>
+      <h2>👗 REVIA | AI 패션 스타일 추천 플랫폼</h2>
       <ul>
         <li>AI가 옷 이미지를 분석해 스타일, 코디, 키워드 추천</li>
         <li>React · Spring Boot · FastAPI · GPT-4o · K-Fashion 모델</li>
@@ -97,9 +191,9 @@
   </section>
 
   <!-- LOCALR7 -->
-  <section style="--accent: var(--localr)">
+  <section class="hidden" style="--accent: var(--localr)">
     <div class="text">
-      <h2 style="color:var(--localr)">🍜 LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티</h2>
+      <h2>🍜 LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티</h2>
       <ul>
         <li>동해안 여행지 맛집 리뷰 + AI 맛집 추천 플랫폼</li>
         <li>React · Spring Boot · OracleDB · Gemini API</li>
@@ -114,9 +208,9 @@
   </section>
 
   <!-- NEXTROZI -->
-  <section style="--accent: var(--nextrozi)">
+  <section class="hidden" style="--accent: var(--nextrozi)">
     <div class="text">
-      <h2 style="color:var(--nextrozi)">🏢 NEXTROZI | 기업 일정·거래 관리 시스템</h2>
+      <h2>🏢 NEXTROZI | 기업 일정·거래 관리 시스템</h2>
       <ul>
         <li>거래처, 재고, 발주 등 기업 일정 통합관리 ERP 시스템</li>
         <li>React · Spring Boot · MySQL · 협업 Notion/Discord</li>
@@ -133,5 +227,21 @@
   <footer>
     <p>© 2025 김창윤 | REVIA · LOCALR7 · NEXTROZI 포트폴리오</p>
   </footer>
+
+  <script>
+    // 🔹 스크롤 시 패럴랙스 & 등장 효과
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          entry.target.classList.remove("hidden");
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll("section").forEach(sec => {
+      observer.observe(sec);
+    });
+  </script>
 </body>
 </html>
