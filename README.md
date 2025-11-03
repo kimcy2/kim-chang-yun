@@ -11,15 +11,14 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 
 ---
 
-<table>
-<tr>
-<td width="55%" valign="top">
-
 ### 1️⃣ REVIA | AI 패션 스타일 추천 플랫폼  
 > **AI가 사용자의 옷 이미지를 분석해 스타일, 코디, 키워드를 추천하는 패션 AI 플랫폼**
 
 📄 **프로젝트 보고서:**  
-[📘 REVIA.pdf 열기](./REVIA.pdf)
+[📘 REVIA.pdf 보기](./REVIA.pdf)
+
+🎥 **시연 영상:**  
+[![REVIA 시연 영상](https://img.youtube.com/vi/K7D7XYrNGWE/0.jpg)](https://youtu.be/K7D7XYrNGWE)
 
 **📌 개요**  
 - 사용자가 업로드한 의류 이미지를 기반으로 색상, 패턴, 키워드를 추출  
@@ -36,31 +35,16 @@ React · Spring Boot · FastAPI · GPT-4o · K-Fashion AI
 - AI 분석 + 디자인 완성도 결합 프로젝트  
 - “보여줄 수 있는 완성도”를 목표로 개발  
 
-</td>
-<td width="45%" align="center">
-
-<iframe width="420" height="236"
-src="https://www.youtube.com/embed/K7D7XYrNGWE"
-title="REVIA 시연 영상"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</td>
-</tr>
-</table>
-
 ---
-
-<table>
-<tr>
-<td width="55%" valign="top">
 
 ### 2️⃣ LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티  
 > **동해안 7번 국도 중심의 맛집 리뷰와 AI 챗봇이 결합된 여행 커뮤니티 플랫폼**
 
 📄 **프로젝트 보고서:**  
-[📘 LOCALR7.pdf 열기](./LOCALR7.pdf)
+[📘 LOCALR7.pdf 보기](./LOCALR7.pdf)
+
+🎥 **시연 영상:**  
+[![LOCALR7 시연 영상](https://img.youtube.com/vi/xcB39IgvUVc/0.jpg)](https://youtu.be/xcB39IgvUVc)
 
 **📌 개요**  
 - 맛집 리뷰와 위치 기반 지도 검색 기능  
@@ -77,31 +61,16 @@ React · Spring Boot · OracleDB · Google Maps API · Gemini AI
 - Gemini API로 AI 리뷰 요약 기능 구현  
 - 기획/디자인/조율을 담당한 팀장 경험  
 
-</td>
-<td width="45%" align="center">
-
-<iframe width="420" height="236"
-src="https://www.youtube.com/embed/xcB39IgvUVc"
-title="LOCALR7 시연 영상"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</td>
-</tr>
-</table>
-
 ---
-
-<table>
-<tr>
-<td width="55%" valign="top">
 
 ### 3️⃣ NEXTROZI | 기업 일정·거래 관리 시스템  
 > **기업 내부의 거래처, 재고, 일정, 발주를 한 화면에서 관리하는 B2B 웹 시스템**
 
 📄 **프로젝트 보고서:**  
-[📘 NEXTROZI.pdf 열기](./NEXTROZI.pdf)
+[📘 NEXTROZI.pdf 보기](./NEXTROZI.pdf)
+
+🎥 **시연 영상:**  
+[![NEXTROZI 시연 영상](https://img.youtube.com/vi/EBA-bEs7Ta0/0.jpg)](https://youtu.be/EBA-bEs7Ta0)
 
 **📌 개요**  
 - 거래처 등록, 일정, 발주를 통합 관리하는 ERP형 시스템  
@@ -117,20 +86,6 @@ React · Spring Boot · MySQL · Notion · Discord 협업
 **🏆 성과**  
 - 팀 내 협력과 역할 분담을 강화  
 - 데이터 기반 비즈니스 로직 완성  
-
-</td>
-<td width="45%" align="center">
-
-<iframe width="420" height="236"
-src="https://www.youtube.com/embed/EBA-bEs7Ta0"
-title="NEXTROZI 시연 영상"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</td>
-</tr>
-</table>
 
 ---
 
