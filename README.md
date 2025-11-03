@@ -7,13 +7,13 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 
 ---
 
-## 🎬 프로젝트 시연 영상
+## 프로젝트 시연 영상
 
 <table>
   <tr>
     <td width="50%">
       <h3>🔹 REVIA | AI 패션 스타일 추천 플랫폼</h3>
-      <video src="revia.mp4" width="100%" controls></video>
+      <video src="REVIA.mp4" width="100%" controls></video>
     </td>
     <td width="50%" valign="top">
       <b>개요:</b> AI가 사용자의 옷 이미지를 분석해 코디, 스타일, 키워드를 추천  
@@ -30,7 +30,7 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
   <tr>
     <td width="50%">
       <h3>🔹 LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티</h3>
-      <video src="localr7.mp4" width="100%" controls></video>
+      <video src="LOCALR7.mp4" width="100%" controls></video>
     </td>
     <td width="50%" valign="top">
       <b>개요:</b> 동해안 여행지 중심의 맛집 리뷰 & AI 챗봇 통합 플랫폼  
@@ -46,7 +46,7 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
   <tr>
     <td width="50%">
       <h3>🔹 NEXTROZI | 기업 일정·거래 관리 시스템</h3>
-      <video src="nextrozi.mp4" width="100%" controls></video>
+      <video src="NEXTROZI.mp4" width="100%" controls></video>
     </td>
     <td width="50%" valign="top">
       <b>개요:</b> 거래처, 재고, 발주 관리 등 B2B 업무를 한 화면에 통합  
@@ -60,7 +60,7 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 
 ---
 
-## 🧰 공통 기술 스택
+## 공통 기술 스택
 
 | 분야 | 사용 기술 |
 |------|------------|
@@ -72,14 +72,14 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 
 ---
 
-## 🧑‍💻 역할 요약
+## 역할 요약
 - 전 프로젝트 **팀장 (기획, 일정, 발표 총괄)**  
 - AI 연동 및 프론트·백엔드 통합 담당  
 - 기술 설계 / 발표 / 보고서·UI 완성도 책임  
 
 ---
 
-<h2 align="center">💬 총평</h2>
+<h2 align="center"> 총평</h2>
 
 <p align="center">
 세 프로젝트 모두 <b>기획 → 설계 → 구현 → 발표</b>까지 직접 주도하며  
