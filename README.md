@@ -14,8 +14,15 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 ### 1️⃣ REVIA | AI 패션 스타일 추천 플랫폼  
 > **AI가 사용자의 옷 이미지를 분석해 스타일, 코디, 키워드를 추천하는 패션 AI 플랫폼**
 
-📽️ **시연 영상:**  
-[▶️ REVIA.mp4 보기](./revia.mp4)
+📽️ **시연 영상 (YouTube에서 바로 재생):**  
+<div align="center">
+<iframe width="640" height="360"
+src="https://www.youtube.com/embed/K7D7XYrNGWE"
+title="REVIA 시연 영상"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+</div>
 
 📄 **프로젝트 보고서:**  
 [📘 3조 REVIA.pdf 열기](./3조REVIA.pdf)
@@ -42,8 +49,15 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 ### 2️⃣ LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티  
 > **동해안 7번 국도 중심의 맛집 리뷰와 AI 챗봇이 결합된 여행 커뮤니티 플랫폼**
 
-📽️ **시연 영상:**  
-[▶️ LOCALR7.mp4 보기](./localr7.mp4)
+📽️ **시연 영상 (YouTube에서 바로 재생):**  
+<div align="center">
+<iframe width="640" height="360"
+src="https://www.youtube.com/embed/xcB39IgvUVc"
+title="LOCALR7 시연 영상"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+</div>
 
 📄 **프로젝트 보고서:**  
 [📘 2조 LOCALR7.pdf 열기](./2조%20LOCALR7.pdf)
@@ -70,8 +84,15 @@ AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오
 ### 3️⃣ NEXTROZI | 기업 일정·거래 관리 시스템  
 > **기업 내부의 거래처, 재고, 일정, 발주를 한 화면에서 관리하는 B2B 웹 시스템**
 
-📽️ **시연 영상:**  
-[▶️ NEXTROZI.mp4 보기](./nextrozi.mp4)
+📽️ **시연 영상 (YouTube에서 바로 재생):**  
+<div align="center">
+<iframe width="640" height="360"
+src="https://www.youtube.com/embed/EBA-bEs7Ta0"
+title="NEXTROZI 시연 영상"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+</div>
 
 📄 **프로젝트 보고서:**  
 [📘 4조 NEXTROZI.pdf 열기](./4조%20NEXTROZI.pdf)
