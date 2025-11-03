@@ -1,81 +1,40 @@
-## 🎨 REVIA | AI 패션 스타일 추천 플랫폼
-
-<table>
-  <tr>
-    <td width="50%">
-      <ul>
-        <li><strong>개요:</strong> AI가 사용자의 옷 이미지를 분석해 코디, 스타일, 키워드를 추천</li>
-        <li><strong>기술:</strong> React · Spring Boot · Python FastAPI · OpenAI GPT-4o · K-Fashion AI 모델</li>
-        <li><strong>특징:</strong> AI 화보 자동 생성 / Glass Tone UX / 쇼핑몰 연동</li>
-        <li><strong>성과:</strong> 이미지 분석 → AI 스타일 추천 → 시각적 패션 매거진 자동 생성</li>
-        <li><strong>소감:</strong> 디자인 완성도와 AI 연동을 동시에 완성하며 “보여줄 수 있는 완성도”를 목표로 개발</li>
-        <li>📄 <a href="./REVIA.pdf">REVIA.pdf 보기</a></li>
-      </ul>
-    </td>
-    <td align="center">
-      <iframe width="420" height="236"
-        src="https://www.youtube.com/embed/K7D7XYrNGWE"
-        title="REVIA 시연 영상"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </td>
-  </tr>
-</table>
+# 🎨 김창윤 AI 포트폴리오
+> AI 웹서비스 3대 프로젝트 — [🔗 전체 보기 (GitHub Pages)](https://kim-chang-yun.github.io/저장소명/)
 
 ---
 
-## 🍜 LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티
-
-<table>
-  <tr>
-    <td width="50%">
-      <ul>
-        <li><strong>개요:</strong> 동해안 여행지 중심의 맛집 리뷰 & AI 챗봇 통합 플랫폼</li>
-        <li><strong>기술:</strong> React · Spring Boot · OracleDB · Google Maps API · Gemini AI</li>
-        <li><strong>주요 기능:</strong> 소셜 로그인, AI 챗봇, 지역별 맛집 정보, 관리자·리뷰 시스템</li>
-        <li><strong>성과:</strong> Gemini API로 AI 맛집 추천 및 리뷰 요약 기능 구현</li>
-        <li><strong>소감:</strong> 팀장으로서 기획·디자인·일정 조율을 전담하며 협업과 관리 능력 강화</li>
-        <li>📄 <a href="./LOCALR7.pdf">LOCALR7.pdf 보기</a></li>
-      </ul>
-    </td>
-    <td align="center">
-      <iframe width="420" height="236"
-        src="https://www.youtube.com/embed/xcB39IgvUVc"
-        title="LOCALR7 시연 영상"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </td>
-  </tr>
-</table>
+### 👗 **REVIA | AI 패션 스타일 추천 플랫폼**
+- **개요:** AI가 사용자의 옷 이미지를 분석해 스타일, 코디, 키워드 추천  
+- **기술 스택:** React · Spring Boot · Python FastAPI · OpenAI GPT-4o · K-Fashion AI 모델  
+- **특징:** AI 화보 자동 생성 / Glass Tone UX / 쇼핑몰 제안 기능  
+- **성과:** 이미지 분석 → 코디 추천 → 패션 매거진 자동 생성  
+- 📄 [REVIA.pdf 보기](REVIA.pdf)  
+- 🎬 [시연 영상 보기](https://youtu.be/K7D7XYrNGWE)
 
 ---
 
-## 🏢 NEXTROZI | 기업 일정·거래 관리 시스템
+### 🍜 **LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티**
+- **개요:** 동해안 여행지 맛집 리뷰 + AI 맛집 추천 플랫폼  
+- **기술 스택:** React · Spring Boot · OracleDB · Gemini API  
+- **주요 기능:** 소셜 로그인 / AI 맛집 챗봇 / 지도 연동  
+- **성과:** Gemini AI 기반 맛집 요약 + 지역별 필터링  
+- 📄 [LOCALR7.pdf 보기](LOCALR7.pdf)  
+- 🎬 [시연 영상 보기](https://youtu.be/xcB39IgvUVc)
 
-<table>
-  <tr>
-    <td width="50%">
-      <ul>
-        <li><strong>개요:</strong> 거래처·재고·발주 관리 등 B2B 업무를 한 화면에 통합</li>
-        <li><strong>기술:</strong> React · Spring Boot · MySQL · 협업 도구 Notion / Discord</li>
-        <li><strong>특징:</strong> ERP 스타일 데이터 관리 / 조직도 및 발주 시스템</li>
-        <li><strong>성과:</strong> 직관적 UI와 데이터 흐름 통합으로 업무 효율성 향상</li>
-        <li><strong>소감:</strong> 협력과 역할 분담을 배우며 팀 리더십 강화</li>
-        <li>📄 <a href="./NEXTROZI.pdf">NEXTROZI.pdf 보기</a></li>
-      </ul>
-    </td>
-    <td align="center">
-      <iframe width="420" height="236"
-        src="https://www.youtube.com/embed/EBA-bEs7Ta0"
-        title="NEXTROZI 시연 영상"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </td>
-  </tr>
-</table>
+---
+
+### 🏢 **NEXTROZI | 기업 일정·거래 관리 시스템**
+- **개요:** 거래처, 재고, 발주 등 기업 일정 통합관리 ERP 시스템  
+- **기술 스택:** React · Spring Boot · MySQL · 협업 Notion/Discord  
+- **특징:** 발주/조직도 통합 UI / 일정 자동화 기능  
+- **성과:** 업무 효율 40% 향상, 직관적 UI 설계  
+- 📄 [NEXTROZI.pdf 보기](NEXTROZI.pdf)  
+- 🎬 [시연 영상 보기](https://youtu.be/EBA-bEs7Ta0)
+
+---
+
+📌 **전체 포트폴리오 웹페이지**  
+👉 [GitHub Pages에서 보기](https://kim-chang-yun.github.io/저장소명/)
+
+---
+© 2025 김창윤 | REVIA · LOCALR7 · NEXTROZI 포트폴리오
