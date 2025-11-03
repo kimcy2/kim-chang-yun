@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700&display=swap" rel="stylesheet" />
   <style>
     /* ==============================
-       Apple Vision Pro GlassTone Portfolio
+       Apple Vision GlassTone Portfolio — FINAL COLOR EDITION
        ============================== */
     :root {
-      --revia: #c9a678;
-      --localr: #6fc7e1;
-      --nextrozi: #c977e6;
+      --revia: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%); /* 연보라 → 진보라 */
+      --localr: linear-gradient(90deg, #3b82f6 0%, #facc15 100%); /* 파랑 → 노랑 */
+      --nextrozi: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%); /* 밝은 파랑 */
     }
 
     * {
@@ -47,6 +47,7 @@
       margin-bottom: 60px;
     }
 
+    /* ========== SECTION CARD ========== */
     section {
       display: flex;
       justify-content: space-between;
@@ -66,7 +67,6 @@
       transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
     }
 
-    /* 🧊 패럴랙스 효과 */
     section.visible {
       transform: rotateX(0deg) translateY(0);
       opacity: 1;
@@ -77,12 +77,12 @@
       opacity: 0;
     }
 
-    /* ✨ 내부 콘텐츠 */
+    /* ========== TEXT CONTENT ========== */
     h2 {
       font-size: 1.3rem;
       font-weight: 600;
       margin-bottom: 14px;
-      background: linear-gradient(90deg, var(--accent), #ffffff);
+      background: var(--accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -104,19 +104,22 @@
       content: "•";
       position: absolute;
       left: 0;
-      color: var(--accent);
+      background: var(--accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     a {
-      color: var(--accent);
+      background: var(--accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       text-decoration: none;
       font-weight: 500;
       transition: 0.3s ease;
     }
 
     a:hover {
-      text-decoration: underline;
-      color: #fff;
+      opacity: 0.85;
     }
 
     .video {
@@ -124,7 +127,6 @@
       border-radius: 22px;
       overflow: hidden;
       box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-      transition: transform 0.4s ease;
     }
 
     iframe {
@@ -141,7 +143,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* 반응형 */
+    /* ========== RESPONSIVE ========== */
     @media (max-width: 900px) {
       section {
         flex-direction: column;
@@ -229,7 +231,7 @@
   </footer>
 
   <script>
-    // 🔹 스크롤 시 패럴랙스 & 등장 효과
+    // 🔹 스크롤 시 부드러운 등장효과 (패럴랙스)
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
