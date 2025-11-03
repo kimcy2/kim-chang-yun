@@ -4,20 +4,20 @@
 > React · Spring Boot · Python FastAPI · OpenAI API 기반
 
 ---
-## 🎬 프로젝트 시연 영상
+## 프로젝트 시연 영상
 <details>
 <summary>🔹 REVIA | AI 패션 스타일 추천 플랫폼</summary>
-<video src="revia_demo.mp4" width="640" controls></video>
+<video src="revia.mp4" width="640" controls></video>
 </details>
 
 <details>
 <summary>🔹 LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티</summary>
-<video src="localr7_demo.mp4" width="640" controls></video>
+<video src="localr7.mp4" width="640" controls></video>
 </details>
 
 <details>
-<summary>🔹 NEXTROZI | 기업 일정·재고 통합 관리 시스템</summary>
-<video src="nextrozi_demo.mp4" width="640" controls></video>
+<summary>🔹 NEXTROZI | 기업 일정·거래 관리 시스템</summary>
+<video src="nextrozi.mp4" width="640" controls></video>
 </details>
 
 ---
