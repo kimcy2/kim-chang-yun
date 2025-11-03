@@ -6,178 +6,163 @@
   <title>김창윤 | REVIA · LOCALR7 · NEXTROZI 포트폴리오</title>
   <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;700&display=swap" rel="stylesheet"/>
   <style>
-    /* ==============================
-       Glassmorphism — Bright & Airy (2025)
-       ============================== */
-    :root{
-      /* 프로젝트 포인트 컬러(그라데이션) */
-      --revia-grad: linear-gradient(90deg,#a78bfa 0%,#7c3aed 100%);
-      --localr-grad: linear-gradient(90deg,#3b82f6 0%,#facc15 100%);
-      --nextrozi-grad: linear-gradient(90deg,#38bdf8 0%,#2563eb 100%);
-      /* 유리 카드 공통 */
-      --glass-bg: rgba(255,255,255,0.22);
-      --glass-border: rgba(255,255,255,0.45);
-      --glass-shadow: 0 20px 60px rgba(13, 24, 38, 0.18);
-      --glass-blur: 30px;
-      --text: rgba(16,22,28,0.9);
-      --muted: rgba(16,22,28,0.6);
-      --link: #2b59ff;
+    :root {
+      /* 프로젝트별 포인트 컬러 */
+      --revia-grad: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%);
+      --localr-grad: linear-gradient(90deg, #3b82f6 0%, #facc15 100%);
+      --nextrozi-grad: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
+      /* Glassmorphism 공통 */
+      --glass-bg: rgba(255, 255, 255, 0.45);
+      --glass-border: rgba(255, 255, 255, 0.6);
+      --text: #1a1a1a;
+      --muted: #444;
     }
 
-    *{ box-sizing: border-box; margin:0; padding:0; }
-    html,body{ height:100%; }
-    body{
-      font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #f6f7fb 0%, #e8ecf9 100%);
       color: var(--text);
-      background:
-        radial-gradient(1200px 800px at 15% -10%, #f2f5ff 0%, #f6f7fb 35%, #eef3ff 55%, #e9f6ff 100%);
-      /* 컬러 블롭(부드러운 조명) */
-      position: relative;
+      min-height: 100vh;
+      padding: 60px 6%;
       overflow-x: hidden;
-      padding: 56px 6%;
     }
 
-    /* 배경 블롭 2개 */
-    body::before, body::after{
-      content:"";
-      position: absolute;
-      pointer-events: none;
-      mix-blend-mode: multiply;
-      filter: blur(60px);
-      opacity: .55;
-    }
-    body::before{
-      top: -120px; left: -80px;
-      width: 520px; height: 520px;
-      background: radial-gradient(closest-side, #b2c7ff, #fff0 70%);
-    }
-    body::after{
-      right: -140px; top: 20%;
-      width: 620px; height: 620px;
-      background: radial-gradient(closest-side, #ffe59a, #fff0 70%);
+    h1 {
+      text-align: center;
+      font-size: clamp(24px, 3.2vw, 34px);
+      font-weight: 700;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #1e1e1e, #444);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    /* 상단 타이틀 */
-    h1{
-      text-align:center;
-      font-size: clamp(24px, 3.5vw, 36px);
-      letter-spacing:.2px;
-      background: linear-gradient(90deg,#0f172a,#1f2937);
-      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
-      margin-bottom:8px;
-    }
-    .subtitle{
-      text-align:center; color:var(--muted);
-      margin-bottom: 44px;
-      font-size: clamp(14px,2.1vw,16px);
+    p.subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 50px;
+      font-size: clamp(14px, 2vw, 16px);
     }
 
-    /* 유리 카드(섹션) */
-    section{
-      display:flex; align-items:center; justify-content:space-between;
-      gap: clamp(20px, 4vw, 48px);
-      margin: clamp(28px, 4vw, 44px) 0;
-      padding: clamp(20px, 3.5vw, 36px);
-      border-radius: 28px;
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 36px;
+      margin-bottom: 60px;
+      padding: 36px;
+      border-radius: 24px;
       background: var(--glass-bg);
       border: 1px solid var(--glass-border);
-      box-shadow: var(--glass-shadow);
-      backdrop-filter: blur(var(--glass-blur)) saturate(160%);
-      -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(160%);
-      position: relative;
-      overflow: hidden;
-      opacity: 0; transform: translateY(28px);
-      transition: opacity .6s ease, transform .6s ease;
-    }
-    /* 내부 하이라이트(유리의 반사) */
-    section::before{
-      content:"";
-      position:absolute; inset:0;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.10) 38%, rgba(255,255,255,0.06) 100%);
-      mix-blend-mode: screen;
-      pointer-events:none;
-    }
-    /* 미세 노이즈로 유리 결 살리기 */
-    section::after{
-      content:"";
-      position:absolute; inset:0;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" stitchTiles="stitch"/></filter></defs><rect width="160" height="160" filter="url(%23n)" opacity="0.025"/></svg>');
-      opacity:.35; mix-blend-mode: overlay; pointer-events:none;
+      box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      transition: all 0.4s ease;
+      opacity: 0;
+      transform: translateY(30px);
     }
 
-    /* 등장 애니메이션 (스크롤 시) */
-    section.visible{ opacity:1; transform: translateY(0); }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-    /* 좌측 텍스트 블록 */
-    .text{ flex:1; min-width: 260px; }
-    h2{
-      font-size: clamp(18px, 2.5vw, 22px);
-      margin-bottom: 12px;
-      line-height: 1.25;
-      /* 섹션별 그라데이션 텍스트 */
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 10px;
       background: var(--accent);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    ul{ list-style:none; padding-left:0; }
-    li{
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.6;
       color: var(--text);
-      opacity:.92;
-      line-height:1.7;
-      margin: 8px 0;
-      position:relative; padding-left:18px;
     }
-    li::before{
-      content:"•"; position:absolute; left:0; top:0;
-      height:100%;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
       background: var(--accent);
-      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: opacity 0.3s;
     }
 
-    a{ color: var(--link); text-decoration:none; font-weight:600; }
-    a:hover{ text-decoration: underline; }
-
-    /* 우측 영상 */
-    .video{
-      flex: 0 0 460px;
-      max-width: 46vw;
-      border-radius: 18px; overflow: hidden;
-      box-shadow: 0 18px 50px rgba(60, 80, 120, .22);
-    }
-    iframe{ width:100%; aspect-ratio:16/9; border:0; }
-
-    footer{
-      text-align:center; color:var(--muted); margin-top: 36px; font-size:14px;
+    a:hover {
+      opacity: 0.8;
     }
 
-    /* 반응형 */
-    @media (max-width: 980px){
-      section{ flex-direction: column; align-items: stretch; }
-      .video{ flex: none; max-width: 100%; }
+    .text {
+      flex: 1 1 320px;
+      min-width: 260px;
     }
-    @media (prefers-color-scheme: dark){
-      :root{
-        --text: rgba(248,250,252,0.95);
-        --muted: rgba(248,250,252,0.7);
-        --link: #9ab6ff;
-        --glass-bg: rgba(255,255,255,0.14);
-        --glass-border: rgba(255,255,255,0.30);
-        --glass-shadow: 0 18px 50px rgba(0,0,0,.36);
+
+    .video {
+      flex: 0 0 420px;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: none;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* 반응형: 모바일에선 단일 컬럼 */
+    @media (max-width: 860px) {
+      body {
+        padding: 40px 5%;
       }
-      body{
-        background:
-          radial-gradient(1200px 800px at 15% -10%, #10121a 0%, #121420 35%, #0f1220 65%, #0c0f1a 100%);
+      section {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px;
+        gap: 20px;
       }
-      body::before{ background: radial-gradient(closest-side, #5f76ff, #fff0 70%); opacity:.45; }
-      body::after{ background: radial-gradient(closest-side, #ffd279, #fff0 70%); opacity:.45; }
+      .video {
+        max-width: 100%;
+      }
+      iframe {
+        aspect-ratio: 16/9;
+      }
+      h2 {
+        font-size: 1.15rem;
+      }
     }
   </style>
 </head>
 <body>
   <h1>김창윤 | AI 기반 3대 포트폴리오 프로젝트</h1>
-  <p class="subtitle">REVIA · LOCALR7 · NEXTROZI </p>
+  <p class="subtitle">REVIA · LOCALR7 · NEXTROZI</p>
 
-  <!-- REVIA (보라) -->
+  <!-- REVIA -->
   <section class="hidden" style="--accent: var(--revia-grad)">
     <div class="text">
       <h2>👗 REVIA | AI 패션 스타일 추천 플랫폼</h2>
@@ -190,15 +175,11 @@
       </ul>
     </div>
     <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/K7D7XYrNGWE"
-        title="REVIA 시연 영상"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/K7D7XYrNGWE" title="REVIA 시연 영상" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- LOCALR7 (좌 파랑 → 우 노랑) -->
+  <!-- LOCALR7 -->
   <section class="hidden" style="--accent: var(--localr-grad)">
     <div class="text">
       <h2>🍜 LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티</h2>
@@ -211,15 +192,11 @@
       </ul>
     </div>
     <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/xcB39IgvUVc"
-        title="LOCALR7 시연 영상"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/xcB39IgvUVc" title="LOCALR7 시연 영상" allowfullscreen></iframe>
     </div>
   </section>
 
-  <!-- NEXTROZI (블루) -->
+  <!-- NEXTROZI -->
   <section class="hidden" style="--accent: var(--nextrozi-grad)">
     <div class="text">
       <h2>🏢 NEXTROZI | 기업 일정·거래 관리 시스템</h2>
@@ -232,11 +209,7 @@
       </ul>
     </div>
     <div class="video">
-      <iframe
-        src="https://www.youtube.com/embed/EBA-bEs7Ta0"
-        title="NEXTROZI 시연 영상"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/EBA-bEs7Ta0" title="NEXTROZI 시연 영상" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -245,16 +218,17 @@
   </footer>
 
   <script>
-    // 스크롤 등장(부드럽고, hover로 뜨는 효과는 없음)
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting){
-          e.target.classList.add('visible');
-          io.unobserve(e.target);
+    // 부드러운 등장 애니메이션 (모바일 포함)
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
         }
       });
-    }, {threshold:.18});
-    document.querySelectorAll('section.hidden').forEach(s=>io.observe(s));
+    },{threshold:0.2});
+
+    document.querySelectorAll("section").forEach(sec=>observer.observe(sec));
   </script>
 </body>
 </html>
