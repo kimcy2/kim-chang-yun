@@ -1,109 +1,162 @@
-# 🌟 AI 기반 웹 프로젝트 종합 포트폴리오
+<h1 align="center">🎓 Portfolio | 김창윤</h1>
 
-> **김창윤** | 풀스택 개발자 (Frontend + Backend + AI 연동)
->  
->  React · Spring Boot · FastAPI · OpenAI API · Gemini API 기반의 3대 통합 프로젝트
-
----
-
-## 🧠 1️⃣ REVIA | AI 패션 인텔리전스 플랫폼
-
-**혁신적인 AI 패션 추천 서비스 – "AI와 데이터로 다시 태어난 스타일"**
-
-- 🔹 **Frontend:** React (Glass Tone UX, 반응형)
-- 🔹 **Backend:** Spring Boot + FastAPI
-- 🔹 **AI:** K-Fashion 딥러닝 모델, OpenAI GPT-4o 연동
-- 🔹 **핵심 기능:**  
-  - 의류 이미지 분석 (색상·패턴·스타일 자동분류)  
-  - 맞춤형 코디 추천 및 AI 화보 생성  
-  - 네이버 쇼핑 API 연동  
-
-📄 [REVIA.pdf 보기](./REVIA.pdf)
-
-<div align="center">
-  <iframe width="540" height="305" src="https://www.youtube.com/embed/K7D7XYrNGWE" 
-  title="REVIA 프로젝트 시연 영상" frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen style="float:right; margin-left:20px;"></iframe>
-</div>
+<p align="center">
+AI 기술과 디자인 감각을 결합한 3대 프로젝트 포트폴리오  
+<br>React · Spring Boot · Python FastAPI · OpenAI API 기반
+</p>
 
 ---
 
-## 🌊 2️⃣ LOCALR7 | 지역 맛집 커뮤니티 웹 플랫폼
-
-**“함께 떠나요, 맛있고 따뜻한 여행”**  
-동해안 7번 국도 맛집 리뷰 & AI 기반 추천 플랫폼
-
-- 🔹 **Frontend:** React  
-- 🔹 **Backend:** Spring Boot + FastAPI  
-- 🔹 **AI:** Google Gemini 1.5 Flash API  
-- 🔹 **핵심 기능:**  
-  - 사용자 리뷰 기반 AI 맛집 추천  
-  - 구글/카카오 로그인, 회원관리  
-  - 관리자 페이지 및 공지 시스템 완비  
-
-📄 [LOCALR7.pdf 보기](./LOCALR7.pdf)
-
-<div align="center">
-  <iframe width="540" height="305" src="https://www.youtube.com/embed/xcB39IgvUVc" 
-  title="LOCALR7 프로젝트 시연 영상" frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen style="float:right; margin-left:20px;"></iframe>
-</div>
+## 🌟 프로젝트별 종합 소개
 
 ---
 
-## ⚙️ 3️⃣ NEXTROZI | 스마트 패션 매거진 웹 서비스
+<table>
+<tr>
+<td width="55%" valign="top">
 
-**“AI가 제안하는 트렌드 중심의 디지털 매거진”**
+### 1️⃣ REVIA | AI 패션 스타일 추천 플랫폼  
+> **AI가 사용자의 옷 이미지를 분석해 스타일, 코디, 키워드를 추천하는 패션 AI 플랫폼**
 
-- 🔹 **Frontend:** React (Parallax Scroll, Apple Vision 스타일 UI)
-- 🔹 **Backend:** Spring Boot  
-- 🔹 **AI:** OpenAI GPT 연동 + 이미지 분석 모듈  
-- 🔹 **핵심 기능:**  
-  - AI가 생성하는 패션 트렌드 기사  
-  - 텍스트 요약 및 코디 분석  
-  - 감각적인 매거진형 인터페이스  
+📄 **프로젝트 보고서:**  
+[📘 REVIA.pdf 열기](./REVIA.pdf)
 
-📄 [NEXTROZI.pdf 보기](./NEXTROZI.pdf)
+**📌 개요**  
+- 사용자가 업로드한 의류 이미지를 기반으로 색상, 패턴, 키워드를 추출  
+- OpenAI GPT-4o와 K-Fashion AI 모델을 활용해 코디 제안 및 텍스트 생성  
 
-<div align="center">
-  <iframe width="540" height="305" src="https://www.youtube.com/embed/EBA-bEs7Ta0" 
-  title="NEXTROZI 프로젝트 시연 영상" frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen style="float:right; margin-left:20px;"></iframe>
-</div>
+**🧠 주요 기술**  
+React · Spring Boot · FastAPI · GPT-4o · K-Fashion AI  
 
----
+**💡 특징**  
+- Glass Tone UX / AI 화보 자동 생성  
+- 패션 키워드 기반 매거진형 추천 페이지  
 
-## 💡 프로젝트 공통 기술 구조
+**🏆 성과**  
+- AI 분석 + 디자인 완성도 결합 프로젝트  
+- “보여줄 수 있는 완성도”를 목표로 개발  
 
-| 구분 | 사용 기술 | 주요 내용 |
-|------|------------|-----------|
-| **Frontend** | React, Zustand, Styled-Components | 반응형 SPA, 상태관리, 컴포넌트 설계 |
-| **Backend** | Spring Boot, FastAPI | REST API, AI 모듈 연동 |
-| **AI** | OpenAI GPT, Gemini API, K-Fashion 모델 | 이미지·텍스트 분석 및 추천 |
-| **Infra** | GitHub, SourceTree | 협업 및 버전관리 |
-| **Design** | Figma, Apple-Glass Tone UX | 모던하고 직관적인 UI/UX |
+</td>
+<td width="45%" align="center">
 
----
+<iframe width="420" height="236"
+src="https://www.youtube.com/embed/K7D7XYrNGWE"
+title="REVIA 시연 영상"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
 
-## 🧩 기획 방향
-
-- 사용자의 **이미지/데이터 기반 맞춤형 경험** 창출  
-- AI를 활용한 **개인화된 패션 및 맛집 추천 시스템** 구축  
-- **디자인 완성도 + 기술 구현력**을 함께 어필하는 프로젝트 구성  
+</td>
+</tr>
+</table>
 
 ---
 
-## 👨‍💻 제작자
+<table>
+<tr>
+<td width="55%" valign="top">
 
-**김창윤 | 풀스택 개발자 (Frontend + Backend + AI Integration)**  
-> - React / Spring Boot / FastAPI / OpenAI API / Gemini API  
-> - GitHub: [kimcy2](https://github.com/kimcy2)  
-> - Email: [contact.kcy.dev@gmail.com](mailto:contact.kcy.dev@gmail.com)
+### 2️⃣ LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티  
+> **동해안 7번 국도 중심의 맛집 리뷰와 AI 챗봇이 결합된 여행 커뮤니티 플랫폼**
+
+📄 **프로젝트 보고서:**  
+[📘 LOCALR7.pdf 열기](./LOCALR7.pdf)
+
+**📌 개요**  
+- 맛집 리뷰와 위치 기반 지도 검색 기능  
+- AI 챗봇(R7봇)이 사용자의 취향을 분석해 맛집 추천  
+
+**🧠 주요 기술**  
+React · Spring Boot · OracleDB · Google Maps API · Gemini AI  
+
+**💡 특징**  
+- 맛집 리뷰 + AI 추천 통합 커뮤니티  
+- 관리자 페이지, 리뷰 요약 자동화  
+
+**🏆 성과**  
+- Gemini API로 AI 리뷰 요약 기능 구현  
+- 기획/디자인/조율을 담당한 팀장 경험  
+
+</td>
+<td width="45%" align="center">
+
+<iframe width="420" height="236"
+src="https://www.youtube.com/embed/xcB39IgvUVc"
+title="LOCALR7 시연 영상"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+
+</td>
+</tr>
+</table>
 
 ---
 
-> ⚡ *본 프로젝트는 휴먼교육센터 풀스택 개발자 과정의 실전 AI 프로젝트로 진행되었습니다.*  
-> 영상은 실제 시연 장면이며, 모든 디자인·개발은 직접 구현하였습니다.
+<table>
+<tr>
+<td width="55%" valign="top">
+
+### 3️⃣ NEXTROZI | 기업 일정·거래 관리 시스템  
+> **기업 내부의 거래처, 재고, 일정, 발주를 한 화면에서 관리하는 B2B 웹 시스템**
+
+📄 **프로젝트 보고서:**  
+[📘 NEXTROZI.pdf 열기](./NEXTROZI.pdf)
+
+**📌 개요**  
+- 거래처 등록, 일정, 발주를 통합 관리하는 ERP형 시스템  
+- 관리자 및 직원 조직도 UI 기반 업무 관리  
+
+**🧠 주요 기술**  
+React · Spring Boot · MySQL · Notion · Discord 협업  
+
+**💡 특징**  
+- ERP 스타일의 데이터 관리 / 실시간 반영  
+- 직관적인 UI로 업무 효율성 향상  
+
+**🏆 성과**  
+- 팀 내 협력과 역할 분담을 강화  
+- 데이터 기반 비즈니스 로직 완성  
+
+</td>
+<td width="45%" align="center">
+
+<iframe width="420" height="236"
+src="https://www.youtube.com/embed/EBA-bEs7Ta0"
+title="NEXTROZI 시연 영상"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen></iframe>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧰 공통 기술 스택
+
+| 분야 | 사용 기술 |
+|------|------------|
+| Frontend | React, Zustand, Axios, Styled-components |
+| Backend | Spring Boot, JPA, MyBatis, FastAPI |
+| AI / API | OpenAI GPT-4o, Gemini API, K-Fashion 모델 |
+| Database | H2, MySQL, OracleDB |
+| Tools | GitHub, VSCode, Figma, Discord, Notion |
+
+---
+
+## 🧑‍💻 역할 요약
+- 전 프로젝트 **팀장 (기획, 일정, 발표 총괄)**  
+- AI 연동 및 프론트·백엔드 통합 담당  
+- 기술 설계 / 발표 / 보고서·UI 완성도 책임  
+
+---
+
+<h2 align="center">💬 총평</h2>
+
+<p align="center">
+세 프로젝트 모두 <b>기획 → 설계 → 구현 → 발표</b>까지 직접 주도하며  
+<br><b>AI + 데이터 + UX 디자인</b>을 결합한 통합형 개발자로 성장했습니다.  
+<br>제한된 시간 속에서도 완성도를 우선시한 태도가 저의 강점입니다.
+</p>
