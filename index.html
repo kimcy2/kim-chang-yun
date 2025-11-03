@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>김창윤 | 포트폴리오</title>
+  <style>
+    body {
+      font-family: "Pretendard", "Noto Sans KR", sans-serif;
+      background: #0f0f0f;
+      color: #f4f4f4;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px;
+    }
+    h2 {
+      color: #ffd87a;
+      border-left: 5px solid #ffd87a;
+      padding-left: 10px;
+      font-size: 1.6rem;
+    }
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 60px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .text {
+      flex: 1;
+    }
+    .video {
+      flex: 0 0 420px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: #ffd87a;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    iframe {
+      width: 100%;
+      height: 236px;
+      border-radius: 12px;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎨 김창윤 | 3대 AI 포트폴리오 프로젝트</h1>
+  <p>React · Spring Boot · Python FastAPI · OpenAI API 기반 AI 웹서비스 포트폴리오</p>
+  <hr style="margin: 30px 0; border: none; border-top: 1px solid #333;" />
+
+  <!-- REVIA -->
+  <section>
+    <div class="text">
+      <h2>REVIA | AI 패션 스타일 추천 플랫폼</h2>
+      <ul>
+        <li><strong>개요:</strong> AI가 사용자의 옷 이미지를 분석해 코디, 스타일, 키워드를 추천</li>
+        <li><strong>기술:</strong> React · Spring Boot · Python FastAPI · OpenAI GPT-4o · K-Fashion AI 모델</li>
+        <li><strong>특징:</strong> AI 화보 자동 생성 / Glass Tone UX / 쇼핑몰 연동</li>
+        <li><strong>성과:</strong> 이미지 분석 → AI 스타일 추천 → 시각적 패션 매거진 자동 생성</li>
+        <li>📄 <a href="REVIA.pdf" target="_blank">REVIA.pdf 보기</a></li>
+      </ul>
+    </div>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/K7D7XYrNGWE"
+        title="REVIA 시연 영상"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- LOCALR7 -->
+  <section>
+    <div class="text">
+      <h2>LOCALR7 | 지역 맛집 리뷰 & AI 챗봇 커뮤니티</h2>
+      <ul>
+        <li><strong>개요:</strong> 동해안 여행지 중심의 맛집 리뷰 & AI 챗봇 통합 플랫폼</li>
+        <li><strong>기술:</strong> React · Spring Boot · OracleDB · Google Maps API · Gemini AI</li>
+        <li><strong>주요 기능:</strong> 소셜 로그인, AI 챗봇, 지역별 맛집 정보, 관리자·리뷰 시스템</li>
+        <li><strong>성과:</strong> Gemini API로 AI 맛집 추천 및 리뷰 요약 기능 구현</li>
+        <li>📄 <a href="LOCALR7.pdf" target="_blank">LOCALR7.pdf 보기</a></li>
+      </ul>
+    </div>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/xcB39IgvUVc"
+        title="LOCALR7 시연 영상"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- NEXTROZI -->
+  <section>
+    <div class="text">
+      <h2>NEXTROZI | 기업 일정·거래 관리 시스템</h2>
+      <ul>
+        <li><strong>개요:</strong> 거래처·재고·발주 관리 등 B2B 업무를 한 화면에 통합</li>
+        <li><strong>기술:</strong> React · Spring Boot · MySQL · 협업 도구 Notion / Discord</li>
+        <li><strong>특징:</strong> ERP 스타일 데이터 관리 / 조직도 및 발주 시스템</li>
+        <li><strong>성과:</strong> 직관적 UI와 데이터 흐름 통합으로 업무 효율성 향상</li>
+        <li>📄 <a href="NEXTROZI.pdf" target="_blank">NEXTROZI.pdf 보기</a></li>
+      </ul>
+    </div>
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/EBA-bEs7Ta0"
+        title="NEXTROZI 시연 영상"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 김창윤 | AI 포트폴리오 프로젝트 (REVIA / LOCALR7 / NEXTROZI)</p>
+  </footer>
+</body>
+</html>
